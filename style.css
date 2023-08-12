@@ -16728,7 +16728,7 @@ height:10%;
     width: 100%;
 }
 .fn-footer-first {
-  
+  height: 15vh;
   justify-content: center;
   align-items: center;
 }
