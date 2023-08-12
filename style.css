@@ -14257,9 +14257,7 @@ margin-bottom: 0vh;
     border-bottom-left-radius: 0;
   }
 
-  .text-seond-row {
-    color: rgba(209, 181, 143, .8);
-  }
+
 
   .home-portfolio-image-wrapper {
     right: auto;
@@ -16824,6 +16822,7 @@ text-align:center;
 }
 .text-split{
   text-align: justify !important;
+  color:black;
 }
 .ArrowAccordion{
   max-width: 20%;
