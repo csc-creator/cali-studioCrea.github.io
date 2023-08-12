@@ -16258,6 +16258,18 @@ height: 400px;
   #w-node-_62504f25-d25f-6aed-2081-791f73fac74f-22c4fdbb {
     grid-area: 1 / 2 / 2 / 4;
   }
+  .timeline-circle.is_1 {
+  background-color:transparent;
+}
+.timeline-circle.is_2 {
+  background-color:transparent;
+}
+.timeline-circle.is_3 {
+  background-color:transparent;
+}
+.timeline-circle.is_4 {
+  background-color:transparent;
+}
 }
 
 @media screen and (max-width: 479px) {
