@@ -16259,16 +16259,16 @@ height: 400px;
     grid-area: 1 / 2 / 2 / 4;
   }
   .timeline-circle.is_1 {
-  background-color:transparent;
+  display:none;
 }
 .timeline-circle.is_2 {
-  background-color:transparent;
+  display:none;
 }
 .timeline-circle.is_3 {
-  background-color:transparent;
+ display:none;
 }
 .timeline-circle.is_4 {
-  background-color:transparent;
+  display:none;
 }
 }
 
@@ -16616,18 +16616,6 @@ height:10%;
     border-radius: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-  }
-  .timeline-circle.is_1 {
-    display:none;
-  }
-  .timeline-circle.is_2 {
-    display:none;
-  }
-  .timeline-circle.is_3 {
-    display:none;
-  }
-  .timeline-circle.is_4 {
-    display:none;
   }
 }
 @media screen and (max-width: 479px){
