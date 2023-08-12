@@ -3722,10 +3722,6 @@ align-content: center;
   color: #b58b4f;
 }
 
-.footer-nav-link.w--current {
-  color: #df0;
-}
-
 .footer-column-container {
   grid-column-gap: 24px;
   grid-row-gap: 24px;
@@ -8522,7 +8518,7 @@ border-radius: 100px;
             transform: rotate(230deg);
 }
 label{
-  color: white;
+  color: black;
   font-size: 1em;
   letter-spacing: 2px;
   transition: all .3s ease-in;
@@ -14903,13 +14899,26 @@ margin-bottom: 0vh;
   .accordion-text-service.premier-service {
     line-height: 1.5rem;
   }
+  .title-item-accordion_service{
+    justify-content:left;
+  }
 
   .title-item-accordion_services {
     width: auto;
-    justify-content: space-between;
+    justify-content: left;
     margin-left: 0;
   }
-
+  .middle_section_wrapper {
+    height: 74vh;
+  }
+  .section-home-about {
+    height: 74vh;
+    position:relative;
+    padding-top:10em;
+}
+.container-left-colum-about_section{
+  position:relative;
+}
   .img_accordion {
     display: none;
     right: -46%;
@@ -15484,10 +15493,10 @@ margin-bottom: 0vh;
   .home-container-portfolio-width-large {
     background-image: linear-gradient(#161513, #161513);
     background-position: 0 0;
-    border-top: 1px solid #d1b58f;
     padding-top: 4em;
     padding-left: .5rem;
     padding-right: .5rem;
+    position:relative;
   }
 
   .home-portfolio-row {
@@ -15603,7 +15612,10 @@ margin-bottom: 0vh;
   .uui-heroheader15_image-wrapper {
     height: 12.75rem;
   }
+  .section_blog_homepage {
 
+    border-radius: 20px;
+   }
   .card_faq._1 {
     width: 90%;
     max-width: 100%;
@@ -15707,9 +15719,7 @@ height: 400px;
     margin-left: .5rem;
     margin-right: .5rem;
   }
-  .icon_social {
-    background-color: #232323;
-  }
+
   .small-text-muted-90 {
     text-align: justify;
     padding-bottom: 2rem;
@@ -16708,7 +16718,7 @@ height:10%;
 }
 .fn-footer-first {
 
-    height: 15vh;
+    height: 50vh;
   justify-content: center;
   align-items: center;
 }
