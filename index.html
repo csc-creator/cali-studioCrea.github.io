@@ -962,11 +962,11 @@
 
         const results = new SplitType(".text-split", { types: "words" });
 
-        const TlContact = gsap.timeline({
+          const TlContact = gsap.timeline({
             paused: true,
             scrollTrigger: {
-                trigger: ".body",
-                start: "top",
+                trigger: ".page-wrapper_corner",
+                start: "top" + window.innerHeight*2,
                 end: "=+200vh",
                 opacity: 1,
                 ease: "power4.out",
@@ -976,15 +976,15 @@
         });
         
         TlContact.fromTo(".btnContact", {
-           keyframes: {
-          "0%":   { x: 100, opacity:0},
-          "25%":  { x: 0, opacity:1, ease: 'sine.out'}, // finetune with individual eases
-          "100%": { opacity:0 },
-               ease: 'expo.out' // ease the entire keyframe block
- },
+            x: 100,
+            opacity: 0,
+            display: "flex",
+        },
+            {
+                x: 0,
+                opacity: 1,
 
-});
-
+            });
         const tlAbout = gsap.timeline({
             paused: true,
             scrollTrigger: {
