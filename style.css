@@ -12832,13 +12832,6 @@ position: relative;
     right: 0%;
   }
 
-  .home-contact-button {
-    width: 7rem;
-    height: 10%;
-    margin-right: 20px;
-    position: fixed;
-  }
-
   .home-contact-button.w--current {
     width: 8rem;
   }
