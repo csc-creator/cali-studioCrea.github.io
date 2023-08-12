@@ -16605,17 +16605,17 @@ height:10%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
-    .timeline-circle.is_1 {
-    background-color:white;
+  .timeline-circle.is_1 {
+    display:none;
   }
   .timeline-circle.is_2 {
-    background-color:#FAC000;
+    display:none;
   }
   .timeline-circle.is_3 {
-    background-color:#F79C00;
+    display:none;
   }
   .timeline-circle.is_4 {
-    background-color:#E63900;
+    display:none;
   }
 }
 @media screen and (max-width: 479px){
