@@ -697,6 +697,7 @@
 
     <script src="https://unpkg.com/split-type"></script>
     <script>
+       
         gsap.registerPlugin(ScrollTrigger);
         
         let TlLoaderHide = gsap.timeline({});
@@ -873,10 +874,10 @@
         });
         var swiper = new Swiper(".mySwiper", {
 
-            centeredSlides: true,
-            slidesPerView: 4,
-            centeredSlides: true,
-            spaceBetween: 30,
+            loop: true,                         //loop
+      autoplay: {                         //autoplay
+          delay: 2000,  
+      },  
             keyboard: {
                 enabled: true,
             },
@@ -885,17 +886,7 @@
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 40,
-                },
-
-            },
+       
         });
 
 
@@ -955,20 +946,20 @@
         ProcessTl
             .fromTo(".slide_up_process", { y: 50, opacity: 0 }, { y: 0, opacity: 1, stagger: 3, ease: "slow(0.7, 0.7, false)" })
             .fromTo(".process1", { opacity: 0, scale: 0.3 }, { scale: 1, opacity: 1, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
-            .fromTo(".timeline-circle.is_2", { opacity: 0, scale: 0, y: -100 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
-            .fromTo(".timeline-middle.is_1", { opacity: 0, transformOrigin: "top center", y: -100 }, { scaleX: 1, opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
+            .fromTo(".timeline-circle.is_2", { opacity: 0, scale: 0, y: -50 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
+            .fromTo(".timeline-middle.is_1", { opacity: 0, transformOrigin: "top center", y: -50 }, { scaleX: 1, opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
 
             .fromTo(".process2", { opacity: 0, scale: 0.3 }, { scale: 1, opacity: 1, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
-            .fromTo(".timeline-circle.is_3", { opacity: 0, scale: 0, y: -100 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
-            .fromTo(".timeline-middle.is_2", { opacity: 0, transformOrigin: "top center", y: -100 }, { opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
+            .fromTo(".timeline-circle.is_3", { opacity: 0, scale: 0, y: -50 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
+            .fromTo(".timeline-middle.is_2", { opacity: 0, transformOrigin: "top center", y: -50 }, { opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
 
             .fromTo(".process3", { opacity: 0, scale: 0.3 }, { scale: 1, opacity: 1, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
-            .fromTo(".timeline-circle.is_4", { opacity: 0, scale: 0, y: -100 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
-            .fromTo(".timeline-middle.is_3", { opacity: 0, transformOrigin: "top center", y: -100 }, { opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
+            .fromTo(".timeline-circle.is_4", { opacity: 0, scale: 0, y: -50 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
+            .fromTo(".timeline-middle.is_3", { opacity: 0, transformOrigin: "top center", y: -50 }, { opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
 
             .fromTo(".process4", { opacity: 0, scale: 0.3 }, { scale: 1, opacity: 1, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
-            .fromTo(".timeline-circle.is_5", { opacity: 0, scale: 0, y: -100 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
-            .fromTo(".timeline-middle.is_4", { opacity: 0, transformOrigin: "top center", y: -100 }, { opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
+            .fromTo(".timeline-circle.is_5", { opacity: 0, scale: 0, y: -50 }, { scale: 1, opacity: 1, y: 0, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, ">")
+            .fromTo(".timeline-middle.is_4", { opacity: 0, transformOrigin: "top center", y: -50 }, { opacity: 1, y: 0, delay: .5, duration: 0.5, transformOrigin: "top center", ease: "slow(0.7, 0.7, false)" }, "<")
 
         const results = new SplitType(".text-split", { types: "words" });
 
@@ -1096,7 +1087,7 @@
             });
 
             tl_slide.fromTo(targetElement, {
-                y: 200,
+                y: 100,
                 opacity: 0,
 
             },
@@ -1161,9 +1152,10 @@
                 }
             }
         );
-        CardTl.fromTo(".title-medium-gold", { y: 100, opacity: 0 }, { y: 0, opacity: 1, ease: "power4.out" });
-        CardTl.fromTo(".swiper-slide", { xPercent: 100, opacity: 0 }, { xPercent: 0, opacity: 1, duration: 1, stagger: 0.3, ease: "power4.out" }, "<");
-
+        CardTl.fromTo(".title-medium-gold", { y: 25, opacity: 0 }, { y: 0, opacity: 1, ease: "power4.out" });
+        CardTl.fromTo(".bold-text-8", { y: 25, opacity: 0 }, { y: 0, opacity: 1, ease: "power4.out" },"<");
+        CardTl.fromTo(".swiper-slide", { xPercent: 50, opacity: 0 }, { xPercent: 0, opacity: 1, duration: 1, stagger: 0.3, ease: "power4.out" }, "<");
+        
       
 
 
