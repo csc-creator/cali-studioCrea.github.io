@@ -7496,39 +7496,21 @@ align-items: center;
 
 .card_faq {
   height: 100%;
-  border: 1px solid #000;
+  border: 1px solid #EDEDF3;
   border-radius: 10px;
   padding: 2rem;
   overflow: hidden;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, .19);
+  color: #EDEDF3;
 }
 
-.card_faq._1 {
- 
-  z-index: 1;
-  width: 100%;
-  height: auto;
-  opacity: 1;
-
-  color: white;
-  border:solid 1px white; 
-  margin-bottom: 32.9em;
-  margin-right: 2em;
-  padding: 2rem;
-  line-height: 18.58px;
-  transition-property: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 13em;
-  overflow: visible;
-}
 
 .card_faq._2 {
   z-index: 2;
   width: 100%;
   height: auto;
-  color: white;
-  border:solid 1px white; 
+  color: #EDEDF3;
+  border:solid 1px #EDEDF3; 
   margin-bottom: 21.9em;
   padding: 2rem;
   transition-property: none;
@@ -7542,7 +7524,7 @@ align-items: center;
   z-index: 4;
   width: 100%;
   height: auto;
-  border-width: solid 1px #635e5e;
+  border-width: solid 1px #EDEDF3;
   border-radius: 5px;
   margin-bottom: 8em;
   padding-left: 2rem;
@@ -7567,36 +7549,12 @@ align-items: center;
   z-index: 3;
   width: 100%;
   height: auto;
-  color: white;
-  border:solid 1px white; 
-  margin-bottom: 13.2em;
+  color: #EDEDF3;
+  border:solid 1px #EDEDF3; 
   margin-right: 2em;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 37.4em;
 }
 
-.card_faq._6 {
-  z-index: 4;
-  width: auto;
-  height: 40em;
-  border-width: 1px;
-  border-radius: 5px;
-  margin-right: 2em;
-  display: none;
-  position: -webkit-sticky;
-  position: sticky;
-}
 
-.card_faq._7 {
-  z-index: 4;
-  background-color: #fff;
-  margin-bottom: 182px;
-  display: none;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 35em;
-}
 
 .img_faq {
   width: 99.9915%;
@@ -9491,6 +9449,19 @@ align-items: center;
 .card_faq _1{
   margin-bottom: 2em;
   top:0em;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  color: white;
+  border:solid 1px white; 
+  margin-right: 2em;
+  padding: 2rem;
+  line-height: 18.58px;
+  transition-property: none;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: visible;
 }
 .card_faq._2,.card_faq _5{
   top:0;
@@ -10830,8 +10801,7 @@ grid-template-columns: 1fr 3px 1fr;
   .card_faq._2 {
     z-index: 2;
     padding: 2rem;
-    position: -webkit-sticky;
-    position: sticky;
+
   }
 
   .card_faq._2:hover {
@@ -10841,7 +10811,7 @@ grid-template-columns: 1fr 3px 1fr;
   .card_faq._3 {
     z-index: 4;
     padding: 2rem;
-    top: 50em;
+
   }
 
   .card_faq._3:hover {
@@ -12613,7 +12583,7 @@ grid-template-columns: 1fr 3px 1fr;
   }
 .home-about-large-container{
   padding: 2em 2em;
-height:50vh;
+
 position: relative;
 
 
@@ -15235,7 +15205,7 @@ margin-bottom: 0vh;
     padding-left: 0;
   }
   .footer-splitting{
-    font-size:2rem;
+    font-size:2.5rem;
    }
    h4{
     font-size:1.75rem;
@@ -16676,9 +16646,10 @@ height:10%;
 }
 .fn-footer-first {
 
-    height: 50vh;
+    height: 40vh;
   justify-content: center;
   align-items: center;
+  background-color: white;
 }
 .pageLoader{
   height: 50vh;
