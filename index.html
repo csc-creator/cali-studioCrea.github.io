@@ -412,31 +412,56 @@
 
 
         </section>
-        <section id="Blog" data-w-id="7a2dc3a0-c976-268c-8ccd-e2bc0b8bbdb2" class="section_blog_homepage">
+    <section id="Blog" data-w-id="7a2dc3a0-c976-268c-8ccd-e2bc0b8bbdb2" class="section_blog_homepage">
             <div class="uui-page-padding-4">
-                <div class="uui-container-large-4">
-                    <div class="wrapper-inside-text">
-                        <h2 class="title-medium-gold">TUTORIALS</h2>
-                        <h3 class="bold-text-8">Articles, tutorials, and tips to help you create visually appealing and
-                            functional websites.</h3>
-                    </div>
-                    <div class=" mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide enlarged"><a href="https://youtube.com/shorts/O6KGLE2Cqyo?feature=share" target="_blank"><img src="img/carouselinifintetuto.png" /></a></div>
-                            <div class="swiper-slide enlarged"><a href="https://www.youtube.com/watch?v=rGERIz_R6gI" target="_blank"><img src="img/stackingcards.png" /></a></div>
-                            <div class="swiper-slide enlarged"><a href="https://youtube.com/shorts/OBYc8aqYjcc?feature=share" target="_blank"><img src="img/rotationtuto.png" /></a></div>
-                            <div class="swiper-slide enlarged"><a href="https://www.youtube.com/watch?v=XhkR50rrE2I" target="_blank"><img src="img/cmsCollectionTiny.png" /></a></div>
-                        </div>
-
-                        <div class="swiper-pagination enlarged"></div>
-                    </div>
-
+              <div class="uui-container-large-4">
+                <div class="wrapper-inside-text">
+                  <div class="tuto">
+                    <h2 class="title-medium-gold">TUTORIALS</h2>
+                  </div>
+                  <h3 class="bold-text-8">Articles, tutorials, and tips to help you create visually appealing and
+                    functional websites.</h3>
                 </div>
 
-            </div>
-
-
-        </section>
+                  <div class="Wrapper_container_blog">
+                        <div class="BlogSection">
+                        <div class="swiper-slide enlarged"><a href="https://youtube.com/shorts/O6KGLE2Cqyo?feature=share" target="_blank"><img src="img/carouselinifintetuto.png" /></a>
+                            <div class="subtitle">
+                            Watch the video
+                            </div>
+                        </div>
+                    </div>
+                    <div class="BlogSection">
+                        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=rGERIz_R6gI" target="_blank"><img src="img/stackingcards.png" /></a>
+                            <div class="subtitle">
+                            Watch the video
+                            </div>
+                        </div>
+                    </div>   
+                    <div class="BlogSection">
+                        <div class="swiper-slide"><a href="https://youtube.com/shorts/OBYc8aqYjcc?feature=share" target="_blank"><img src="img/rotationtuto.png" /></a>
+                            <div class="subtitle">
+                                Watch the video
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="BlogSection">
+                        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=XhkR50rrE2I" target="_blank"><img src="img/cmsCollectionTiny.png" /></a>
+                            <div class="subtitle">
+                                Watch the video
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         
+                  </div>
+                </div>
+         
+         
+         
+         
+         
+          </section>
         
         <section id="faq" data-w-id="e854c860-b868-c0a8-e5a8-21e7f76506ba" class="section-home-faq">
             <div class="home-faq-component">
@@ -856,19 +881,53 @@
                 cursor.classList.remove("enlarged")
             });
         });
-        var swiper = new Swiper(".mySwiper", {
 
-            centeredSlides: true,
-            keyboard: {
-                enabled: true,
-            },
-            grabCursor: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-       
+        
+        const tlTutorial = gsap.timeline({
+        paused: true,
+        scrollTrigger: {
+            trigger: "#Blog",
+            start: "start",
+            end: "bottom",
+
+            ease: "power4.out",
+            toggleActions: "restart none none none",
+        }
         });
+
+        tlTutorial.fromTo(".swiper-slide", {
+        y: 100
+        }, {
+        y: 0,
+        stagger: 0.5
+        });
+
+        let sections = gsap.utils.toArray(".BlogSection");
+
+        let scrollTween = gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none", // <-- IMPORTANT!
+            scrollTrigger: {
+            trigger: "#Blog",
+            pin: true,
+            scrub: 0.1,
+            //snap: directionalSnap(1 / (sections.length - 1)),
+            end: "+=3000"
+            }
+        });
+
+    
+        const buttons = gsap.utils.toArray(".swiper-slide");
+        buttons.forEach((item)  => {
+        let blog = item.querySelector(".subtitle");
+        const tlSub = new TimelineMax({ paused: true, reversed: true });
+        tlSub.fromTo(blog, {opacity:0},{opacity:1})
+        tlSub.reversed(true);
+
+        item.addEventListener("mouseenter", () => tlSub.play());
+        item.addEventListener("mouseleave",() => tlSub.reverse());
+        });
+
 
 
 
