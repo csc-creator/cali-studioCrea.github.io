@@ -8414,11 +8414,10 @@ align-items: center;
   mix-blend-mode: exclusion;
 }
 #IconContact{
-  width:2rem;
+  width:2.5rem;
 }
 .btnContact {
-  z-index: 99999999;
- 
+  z-index: 100;
 width:4rem;
 height:4rem;
 border-radius:100px;
@@ -8433,6 +8432,8 @@ border-radius:100px;
   display:none;
   background-color: #C29953;
 border-radius: 100px;
+  align-items: center;
+justify-content: center;
 }
 
 .close-container{
