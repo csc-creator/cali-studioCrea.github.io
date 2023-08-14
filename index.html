@@ -708,6 +708,7 @@
 
     <script src="https://unpkg.com/split-type"></script>
     <script>
+   
         gsap.registerPlugin(ScrollTrigger);
         
         let TlLoaderHide = gsap.timeline({});
@@ -874,16 +875,6 @@
         });
         const linksCursor = document.querySelectorAll(".enlarged");
 
-        linksCursor.forEach(Link => {
-            Link.addEventListener("mouseenter", e => {
-                cursor.classList.add("enlarged")
-            });
-            Link.addEventListener("mouseout", e => {
-                cursor.classList.remove("enlarged")
-            });
-        });
-
-        
         const tlTutorial = gsap.timeline({
         paused: true,
         scrollTrigger: {
@@ -928,6 +919,10 @@
         item.addEventListener("mouseenter", () => tlSub.play());
         item.addEventListener("mouseleave",() => tlSub.reverse());
         });
+
+
+
+
 
 
 
@@ -1222,6 +1217,8 @@
         }
 
         requestAnimationFrame(raf);
+
+
 
 
     </script>
