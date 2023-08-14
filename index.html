@@ -872,7 +872,17 @@
 
             });
         });
+       
         const linksCursor = document.querySelectorAll(".enlarged");
+
+        linksCursor.forEach(Link => {
+            Link.addEventListener("mouseenter", e => {
+                cursor.classList.add("enlarged")
+            });
+            Link.addEventListener("mouseout", e => {
+                cursor.classList.remove("enlarged")
+            });
+        });
 
         const tlTutorial = gsap.timeline({
         paused: true,
