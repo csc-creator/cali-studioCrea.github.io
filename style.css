@@ -2004,23 +2004,7 @@ textarea.w-input, textarea.w-select {
   
   }
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 60%;
-  }
 
-  .swiper-slide img {
-    display: block;
-    max-width:30vw;
-
-    height: 100%;
-    object-fit: cover;
-  }
 .w-checkbox {
   margin-bottom: 5px;
   padding-left: 20px;
@@ -8217,7 +8201,63 @@ align-items: center;
   border-radius: 1px;
   position: absolute;
 }
+.swiper-wrapper{
+  padding-left: 10%;
+}.Wrapper_container_blog{
+  flex-wrap: nowrap;
+display:flex;
+flex-direction:row;
+align-items:center;
 
+
+width:200vw;
+margin-left:4rem;
+}
+.BlogSection{
+position:relative;
+height:100%;
+display:flex;
+align-items: center;
+
+}
+
+.subtitle {
+  width: 10rem;
+  height: 10rem;
+  background-color: #1C1A1A;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 100%;
+  padding:1rem;
+  text-align:center;
+}
+.swiper-slide{
+display:flex;
+justify-content: center;
+
+width:40vw;
+margin-right:2rem;
+align-items: center;
+color: white;
+}
+.swiper-slide img{
+
+  width:40vw;
+  
+  margin-right:2em;
+  
+  }
+  .subtitle img{
+    width:20px;
+    color:white;
+  }
+#Blog{
+  position: sticky;
+  top:0;
+}
 .accordion-icon_horizontal-line {
   width: .75rem;
   height: 2px;
@@ -13198,7 +13238,9 @@ margin-bottom: 0vh;
     padding-left: 0;
     padding-right: 1rem;
   }
-
+  .swiper-slide{
+    width:72vw;
+  }
   .second-row-process-section.mobil {
     width: 100%;
     color: rgba(226, 210, 188, .79);
@@ -13526,10 +13568,7 @@ margin-bottom: 0vh;
     padding: .125rem .5rem;
     font-size: .75rem;
   }
-  .swiper-slide img {
-    display: block;
-    max-width:60vw;
-    }
+
   .uui-badge-group {
     font-size: .75rem;
   }
@@ -14558,7 +14597,9 @@ margin-bottom: 0vh;
     padding-left: 0;
     padding-right: 0;
   }
-
+  h1{
+    font-size:1.75rem;
+  }
   .heroSubtitle {
     align-items: left;
     text-align: justify;
@@ -16395,7 +16436,6 @@ height:20%;
 .menu_wrapper {
   margin-bottom: 2em;
   justify-content: flex-start;
-
 }
 .timelinepro._50p {
   right: 51%;
@@ -16773,7 +16813,4 @@ text-align:center;
 .rotate img {
     transform: rotate(180deg);
     transition: .3s;
-}
-.swiper-wrapper{
-  padding-left: 10%;
 }
