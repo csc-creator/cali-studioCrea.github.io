@@ -898,12 +898,11 @@
 
         let scrollTween = gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
-            ease: "none", // <-- IMPORTANT!
+            ease: "none", 
             scrollTrigger: {
             trigger: "#Blog",
             pin: true,
             scrub: 0.1,
-            //snap: directionalSnap(1 / (sections.length - 1)),
             end: "+=3000"
             }
         });
