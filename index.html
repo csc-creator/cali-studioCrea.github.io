@@ -712,8 +712,7 @@
 
 
     <script defer src="https://unpkg.com/split-type"></script>
-    <script>
-   
+ <script>
         gsap.registerPlugin(ScrollTrigger);
         
         let TlLoaderHide = gsap.timeline({});
@@ -878,7 +877,7 @@
 
             });
         });
-       
+        
         const linksCursor = document.querySelectorAll(".enlarged");
 
         linksCursor.forEach(Link => {
@@ -913,11 +912,12 @@
 
         let scrollTween = gsap.to(sections, {
             xPercent: -100 * (sections.length - 1),
-            ease: "none", 
+            ease: "none", // <-- IMPORTANT!
             scrollTrigger: {
             trigger: "#Blog",
             pin: true,
             scrub: 0.1,
+            //snap: directionalSnap(1 / (sections.length - 1)),
             end: "+=3000"
             }
         });
@@ -942,11 +942,7 @@
 
 
 
-        jQuery('.title-item-accordion_service').each(function () {
-            jQuery(this).click(function () {
-                jQuery(this).toggleClass("rotate");
-            });
-        });
+       
 
 
         const targetfooter = document.querySelector(".footer-splitting");
@@ -980,7 +976,7 @@
         }
         );
 
-const service = gsap.utils.toArray(".title-item-accordion_service1");
+        const service = gsap.utils.toArray(".title-item-accordion_service1");
         service.forEach((itemAcc)  => {
         let accordion = itemAcc.querySelector(".img_accordion1");
         const tlAcc = new TimelineMax({ paused: true, reversed: true });
@@ -990,6 +986,11 @@ const service = gsap.utils.toArray(".title-item-accordion_service1");
         itemAcc.addEventListener("mouseenter", () => tlAcc.play());
         itemAcc.addEventListener("mouseleave",() => tlAcc.reverse());
         });
+
+
+
+
+       
         var ProcessTl = gsap.timeline(
             {
                 scrollTrigger: {
@@ -1128,7 +1129,7 @@ const service = gsap.utils.toArray(".title-item-accordion_service1");
                 });
         });
         $(".slide_up_serv").each(function (index) {
-            let triggerElement = $(".section-home-services");
+            let triggerElement = $(".section-home-services1");
            
 
             let tl_slide = gsap.timeline({
@@ -1240,8 +1241,6 @@ const service = gsap.utils.toArray(".title-item-accordion_service1");
         }
 
         requestAnimationFrame(raf);
-
-
 
 
     </script>
