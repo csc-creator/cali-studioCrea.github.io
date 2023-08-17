@@ -2749,11 +2749,11 @@ align-content: center;
   margin-right: 2rem;
   position: relative;
 }
-.accordion-item-service.last-item{
+.accordion-item-service1.last-item{
   border-bottom: 1px solid #929292;
   margin-bottom:10em;
 }
-.accordion-item-service {
+.accordion-item-service1 {
   z-index: 0;
   width: auto;
   max-width: 1090px;
@@ -2765,11 +2765,12 @@ align-content: center;
   position: relative;
   overflow: visible;
 }
-.accordion-text-services {
+.accordion-text-services1 {
   text-align: justify;
+  display:none;
 }
-.accordion-title-container {
-  width: 100%;
+.accordion-title-container1 {
+  width: 70%;
   color: #161513;
   flex-direction: row;
   justify-content: flex-start;
@@ -2870,31 +2871,7 @@ align-content: center;
   display: flex;
 }
 
-.title-item-accordion_services {
-  z-index: -2;
-  width: 100%;
-  color: #161513;
-  background-color: rgba(0, 0, 0, 0);
-  border-left: 0 solid #a8a7a7;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  transition: background-color .2s cubic-bezier(.526, .132, .25, 1);
-  display: flex;
-  position: relative;
-  transform: translate(0);
-}
-
-.title-item-accordion_services:hover {
-  background-color: rgba(0, 0, 0, 0);
-  padding-left: 0;
-}
-
-.img_accordion {
+.img_accordion1 {
   z-index: 0;
   width: 20%;
   order: 0;
@@ -2905,38 +2882,6 @@ align-content: center;
   bottom: 0%;
   left: auto;
   right: 19%;
-}
-
-.img_accordion.item2img {
-  display: block;
-  top: -5%;
-}
-
-.img_accordion.item3img {
-  display: none;
-  top: 24%;
-}
-
-.img_accordion.item1 {
-  width: 45%;
-  display: none;
-  top: -67px;
-  bottom: 0%;
-  left: auto;
-  right: 0%;
-}
-
-.img_accordion.item2 {
-  width: 45%;
-  display: block;
-}
-
-.img_accordion.item3 {
-  display: block;
-}
-
-.img_accordion.item4 {
-  display: none;
 }
 
 .home-process-container-large {
@@ -4517,7 +4462,7 @@ align-content: center;
   position: relative;
 }
 
-.section-home-services {
+.section-home-services1 {
   display: block;
 }
 
@@ -8245,7 +8190,7 @@ color: white;
 }
 .swiper-slide img{
 
-  width:40vw;
+  width:25vw;
   
   margin-right:2em;
   
@@ -8404,7 +8349,7 @@ svg {
 border-radius: 100%;
 background-color:#B58B4F;
 }
-.title-item-accordion_service{
+.1{
   display: flex;
 justify-content: center;
 align-items: center;
@@ -9707,7 +9652,7 @@ grid-template-columns: 1fr 3px 1fr;
     margin-right: 1rem;
   }
 
-  .accordion-item-service {
+  .accordion-item-service1 {
     max-width: 1310px;
    
   
@@ -9718,7 +9663,7 @@ grid-template-columns: 1fr 3px 1fr;
     padding-right: 2rem;
   }
 
-  .accordion-title-container {
+  .accordion-title-container1 {
     margin-top: 10px;
     margin-bottom: 1rem;
     padding-top: 2rem;
@@ -10685,7 +10630,7 @@ grid-template-columns: 1fr 3px 1fr;
     align-items: center;
   }
 
-  .accordion-item-service {
+  .accordion-item-service1 {
     max-width: 1090px;
   }
 
@@ -10753,7 +10698,7 @@ grid-template-columns: 1fr 3px 1fr;
     background-image: none;
   }
 
-  .section-home-services {
+  .section-home-services1 {
     background-image: none;
     background-position: 0 0;
     background-size: auto;
@@ -11054,7 +10999,7 @@ grid-template-columns: 1fr 3px 1fr;
     display: flex;
   }
 
-  .accordion-title-container {
+  .accordion-title-container1 {
     margin-top: 1rem;
     padding-left: 0;
     font-size: 2.72rem;
@@ -11066,7 +11011,7 @@ grid-template-columns: 1fr 3px 1fr;
     line-height: 2.3rem;
   }
 
-  .img_accordion {
+  .img_accordion1{
     width: 20rem;
     top: -63px;
   }
@@ -11234,7 +11179,7 @@ grid-template-columns: 1fr 3px 1fr;
     padding: 2em 2em;
   }
 
-  .section-home-services {
+  .section-home-services1 {
     width: 100%;
     background-image: none;
     background-position: 0 0;
@@ -11615,12 +11560,12 @@ grid-template-columns: 1fr 3px 1fr;
     margin-right: 0;
   }
 
-  .accordion-item-service {
+  .accordion-item-service1 {
     padding-left: 0;
     padding-right: 0;
   }
 
-  .accordion-title-container {
+  .accordion-title-container1 {
     margin-left: 1em;
     padding-left: 2rem;
   }
@@ -13141,7 +13086,7 @@ margin-bottom: 0vh;
     padding-right: 2em;
   }
 
-  .accordion-item-service {
+  .accordion-item-service1 {
     width: auto;
     margin-left: 0;
     margin-right: 0;
@@ -13153,9 +13098,6 @@ margin-bottom: 0vh;
     line-height: 1.4rem;
   }
 
-  .title-item-accordion_services {
-    width: 100%;
-  }
 
   .home-process-container-large {
     height: auto;
@@ -14845,7 +14787,7 @@ margin-bottom: 0vh;
     display: block;
   }
 
-  .accordion-item-service {
+  .accordion-item-service1 {
     width: auto;
     flex-direction: column;
     justify-content: flex-start;
@@ -14855,33 +14797,30 @@ margin-bottom: 0vh;
     display: block;
   }
 
-  .accordion-title-container {
+  .accordion-title-container1 {
     width: auto;
     justify-content: space-between;
     margin-left: 0;
     padding-left: 0;
   }
-  .accordion-title-container:hover {
+  .accordion-title-container1:hover {
     color: #d1b58f;
   }
   .accordion-text-service.premier-service {
     line-height: 1.5rem;
   }
-  .title-item-accordion_service{
+  .title-item-accordion_service1{
     justify-content:left;
-  }
-
-  .title-item-accordion_services {
-    width: auto;
-    justify-content: left;
-    margin-left: 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
   }
 
 
 .container-left-colum-about_section{
   position:relative;
 }
-  .img_accordion {
+  .img_accordion1 {
     display: none;
     right: -46%;
   }
@@ -15251,7 +15190,7 @@ margin-bottom: 0vh;
    h4{
     font-size:1.75rem;
    }
-   .img_accordion{
+   .img_accordion1{
     width:35vw;
     position: absolute;
     top: 50%;
@@ -16448,7 +16387,7 @@ height:20%;
  
   right: 49%;
 }
-.accordion-item-service.last-item{
+.accordion-item-service1.last-item{
   padding-bottom: 2em;
   margin-bottom:1em;
 }
@@ -16771,7 +16710,12 @@ text-align:center;
   opacity:0;
   display:none;
 }
-
+.title-item-accordion_service1{
+  justify-content:left;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
 
 .menu_container_hero{
   display:flex;
