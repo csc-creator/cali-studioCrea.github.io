@@ -8178,6 +8178,8 @@ align-items: center;
   border-radius: 100%;
   padding:1rem;
   text-align:center;
+    flex-direction: column;
+
 }
 .swiper-slide{
 display:flex;
