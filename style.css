@@ -8178,7 +8178,7 @@ align-items: center;
   position: absolute;
   border-radius: 100%;
   padding:1rem;
-  text-align:center;
+ 
     flex-direction: column;
 
 }
@@ -16766,3 +16766,5 @@ text-align:center;
   display: block;
  
 }
+.wrapper_text_btn{
+  text-align:center;
