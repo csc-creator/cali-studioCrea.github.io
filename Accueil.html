@@ -298,22 +298,21 @@
                     <div data-w-id="cbc48001-f82b-591d-c251-d9d4f80a0ce0" class="w-layout-grid home-about-component">
                         <div id="w-node-cbc48001-f82b-591d-c251-d9d4f80a0ce1-22c4fdbb"
                             class="container-left-colum-about_section">
-                            <p class="title-section-large black text-split scrub-each-word"> La création d'un site web peut être une tâche décourageante, surtout avec les nombreuses options disponibles aujourd'hui (wordpress, squarespace, webflow, wix, etc.). 
+                            <p class="title-section-large black text-split scrub-each-word"> La création d'un site web peut être une tâche décourageante, 
+                                surtout avec les nombreuses options disponibles aujourd'hui (wordpress, squarespace, webflow, wix, etc.). 
                                 Il peut être difficile de choisir celui qui convient le mieux à vos activités. 
-                                Une fois ce choix fait, vous devrez ensuite vous préoccuper de la conception, 
-                                du référencement, de la vitesse de chargement, etc. Cela peut facilement prendre 
+                                Une fois ce choix fait, vous devez ensuite vous préoccuper de la conception, 
+                                du référencement, de la vitesse de chargement de votre site, etc. Cela peut facilement prendre 
                                 une grande partie de votre temps. Mon but est de vous aider dans toutes ces tâches. 
                                 En tant que designer web, certifié Webflow et avec de l'expérience en html, CSS, et 
-                                javascript, mon but est d'aider les créatifs, les organisations à but non lucratif, 
-                                et les petites entreprises à avoir un site à leur image. 
-                                Que vous soyez un artiste cherchant à présenter votre portfolio, une organisation à but 
-                                non lucratif cherchant à sensibiliser le public à une cause, 
+                                javascript, j'aide les créatifs, les organisations à but non lucratif, 
+                                et les entreprises à avoir un site à leur image. 
+                                Que vous soyez un artiste cherchant à présenter votre portfolio, une association cherchant à sensibiliser le public à une cause, 
                                 ou un entrepreneur cherchant à lancer un commerce électronique, 
-                                je suis là pour vous aider à toutes les étapes de votre projet. 
-                                Je crois au pouvoir de la communication et de la collaboration. 
+                                je suis là pour vous aider dans toutes les étapes de votre projet web.
                                 Je m'assure que chaque aspect du site web correspond à vos objectifs et à vos inspirations.<br/>
-                                 Je m'efforce également de créer un design web durable. 
-                                 Pour aider à réduire l'impact carbone d'un site web, un arbre est planté pour chaque 
+                                 Je m'efforce également de créer des sites eco-responsable. 
+                                 Pour aider à réduire l'impact carbone, un arbre est planté pour chaque 
                                  site web conçu ou développé.
 
                               
@@ -413,9 +412,7 @@
                                 <div class="wrapper_text_btn">
                                     Regarder la video
                                     </div>
-                                 <div class="IconTuto">
-                                    <img src="img/IconDowload.png" loading="lazy" alt="icon link">
-                                </div>
+                         
                         </div>
                             </div>
                         </div>
@@ -427,9 +424,7 @@
                                 <div class="wrapper_text_btn">
                                     Regarder la video
                                     </div>
-                                 <div class="IconTuto">
-                                    <img src="img/IconDowload.png" loading="lazy" alt="icon link">
-                                </div>
+                                 
                         </div>
                             </div>
                         </div>
@@ -441,9 +436,7 @@
                                 <div class="wrapper_text_btn">
                                     Regarder la video
                                     </div>
-                                 <div class="IconTuto">
-                                    <img src="img/IconDowload.png" loading="lazy" alt="icon link">
-                                </div>
+                                
                         </div>
                             </div>
                         </div>
@@ -455,9 +448,7 @@
                                 <div class="wrapper_text_btn">
                                     Regarder la video
                                     </div>
-                                 <div class="IconTuto">
-                                    <img src="img/IconDowload.png" loading="lazy" alt="icon link">
-                                </div>
+                                
                         </div>
                             </div>
                         </div>
@@ -1039,6 +1030,15 @@
 
         });
 
+            const TlSpin = gsap.timeline({repeat:-1, repeatDelay: 1});
+            TlSpin.fromTo(".textBtn", {
+            rotation:0, delay:0.5,
+            
+        },
+            {
+                rotation:390, duration:10
+               
+            });
     const tlAbout = gsap.timeline({
         paused: true,
         scrollTrigger: {
