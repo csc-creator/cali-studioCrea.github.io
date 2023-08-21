@@ -2522,7 +2522,16 @@ align-content: center;
   position: relative;
   top: 0;
 }
-
+.menu_container {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: .5em 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width:auto;}
 .portfolio-main-part {
   z-index: 0;
   width: 87%;
