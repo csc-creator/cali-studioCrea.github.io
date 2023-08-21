@@ -2341,7 +2341,20 @@ align-content: center;
   bottom: auto;
   overflow: hidden;
 }
-
+.textBtn {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  z-index: 1000;
+  bottom: 0;
+  right: 10;
+  right: 5%;
+  bottom: 5%;
+}
+.bkBtn {
+  position: relative;
+  z-index: 6;
+}
 .text-header_wrapper {
   z-index: 1;
   width: 100%;
