@@ -123,13 +123,18 @@
                 <div class="bar_scroll-inside"></div>
             </div> -->
              <div class="btnContact FullSize">
+                    <div class="btnContact FullSize">
               
 
-                <a href="mailto:cali.studioCrea.com?subject=Mail from Our Site" data-w-id="49effe88-a9e1-de34-7d32-bb025787cbd4" style="opacity:0"
-                    class="home-contact-button w-inline-block">  <img  src="img/Badge2GIT.png" /></a>
-                </svg>
+                    <a href="mailto:cali.studioCrea.com?subject=Mail from Our Site" data-w-id="49effe88-a9e1-de34-7d32-bb025787cbd4" style="opacity:0"
+                    class="home-contact-button w-inline-block">
+                    <img class="bkBtn" src="img/BkEng.png" alt="background button contact" loading="lazy" />
+                    <img class="textBtn" src="img/TextEng.png" alt="text button contact" loading="lazy"/></a>
+            
 
             </div>
+
+
         </div>
         <div class="hero_wrapper">
 
@@ -925,7 +930,7 @@
             trigger: "#Blog",
             start: "start",
             end: "bottom",
-
+            pin:true,
             ease: "power4.out",
             toggleActions: "restart none none none",
         }
@@ -945,7 +950,7 @@
             ease: "none", // <-- IMPORTANT!
             scrollTrigger: {
             trigger: "#Blog",
-            pin: true,
+       
             scrub: 0.1,
             //snap: directionalSnap(1 / (sections.length - 1)),
             end: "+=3000"
@@ -1086,6 +1091,15 @@
 
             });
 
+            const TlSpin = gsap.timeline({repeat:-1, repeatDelay: 1});
+            TlSpin.fromTo(".textBtn", {
+            rotation:0, delay:0.5,
+            
+        },
+            {
+                rotation:390, duration:10
+               
+            });
         const tlAbout = gsap.timeline({
             paused: true,
             scrollTrigger: {
