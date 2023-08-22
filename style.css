@@ -7926,10 +7926,7 @@ margin-left:24rem;
   }
 
   .img_accordion {
-    width: 35vw;
-    position: absolute;
-    top: 50%;
-    right: 0
+   display:none;
   }
 
   .footer-column-container._2 {
