@@ -3653,8 +3653,7 @@ a {
   align-items: center;
   display: flex;
   flex-direction: row;
-  width: 40%;
-  padding: .5em
+  width: 30%;
 }
 
 .uui-faq04_component {
@@ -4466,15 +4465,9 @@ margin-left:24rem;
 .ham {
   color: #fff;
   padding-right: 1em;
-
 }
 
-.on{
-  color:#C19650;
-}
-.off{
-  color:#fff;
-}
+
 
 .pageTransition {
   width: 100vw;
@@ -9084,4 +9077,47 @@ margin-left:24rem;
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/playfairdisplay/v30/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDXbtY.ttf) format('truetype')
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+
+input.check-toggle-round-flat:checked ~ .off {
+  color: #F36F25;
+}
+
+input.check-toggle-round-flat:checked ~ .on {
+  color: #fff;
+}
+
+.switch > span.on {
+  left: 0;
+  padding-left: 2px;
+  color: #CCA25A;
+}
+
+.switch > span.off {
+  right: 0;
+  padding-right: 4px;
+  color: #fff;
+}
+
+.check-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.check-toggle + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
